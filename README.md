@@ -1,2 +1,2 @@
 # IPHONE-DENACH-CODE-
-My copia IPHONE
+My copy IPHONE
