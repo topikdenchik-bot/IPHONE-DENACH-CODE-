@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея</title>
+<style>
+body { font-family: Arial; text-align: center; margin: 20px; }
+img { width: 80%; max-width: 300px; margin: 10px 0; border-radius: 10px; }
+button { margin: 10px; }
+</style>
+</head>
+<body>
+<h2>Галерея изображений</h2>
+<img id="galleryImg" src="https://picsum.photos/300/200?random=1" alt="Галерея">
+<br>
+<button onclick="nextImage()">Следующее изображение</button>
+
+<script>
+let imgIndex = 1;
+function nextImage() {
+  imgIndex++;
+  document.getElementById('galleryImg').src = `https://picsum.photos/300/200?random=${imgIndex}`;
+}
+</script>
+<br>
+<a href="index.html">На главную</a>
+</body>
+</html>
